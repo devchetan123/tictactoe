@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+*{
+    font-family: 'Varela Round', sans-serif;
+}
+
+body{
+    background: rgb(16, 24, 82);
+}
+
+#container{
+    display: grid;
+    grid-template-columns : 1fr 1fr;
+    margin: auto;
+    width: 70%;
+    margin-top: 60px;
+}
+
+
+
+#info > h2{
+    color: white;
+    font-size: 3vw;
+}
+
+.mainBox{
+    display : grid;
+    grid-template-columns : repeat(3, 10vw);
+    grid-template-rows : repeat(3, 10vw);
+}
+
+.outerBox{
+    border: 1.4px solid rgba(255, 217, 0, 0.973);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
+
+.top-border {
+    border-top: none;
+}
+
+.btm-border{
+    border-bottom: none;
+}
+
+.right-border {
+    border-right: none;
+}
+
+.left-border{
+    border-left: none;
+}
+
+#resetBtn{
+    border: 2px solid red;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#infoDiv{
+  color: white;
+  font-size: 20px;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#footer {
+    text-align: center;
+    position:absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%);
+    color: white;
+    background-color: rgb(30, 40, 94);
+    width: 100%;
+    height: 5vw;
+    font-size: 1.4vw;
+}
+
+@media screen and (max-width : 1100px) {
+    
+
+    #info > h2{
+        color: white;
+        font-size: 3vw;
+    }
+    
+    }
+
+@media screen and (max-width : 900px) {
+    
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+}
+
+.mainBox{
+    display : grid;
+    grid-template-columns : repeat(3, 15vw);
+    grid-template-rows : repeat(3, 15vw);
+}
+
+.outerBox{
+    font-size: 8vw;
+}
+
+#info > h2{
+    color: white;
+    font-size: 5vw;
+}
+
+}
